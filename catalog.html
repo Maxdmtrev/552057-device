@@ -5,25 +5,24 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип Девайс">
-      </a>
-      <ul class="user-navigation">
-        <li class="search">Поиск по сайту</li>
-        <li class="login">Выйти</li>
-        <li class="compare">Сравнить</li>
-        <li class="basket">Корзина</li>
-      </ul>
-      <ul class="site-navigation">
-        <li class="catalog-nav"><a href="index.html">Каталог товаров</a></li>
-        <li class="delivery-nav"><a href="index.html">Доставка</a></li>
-        <li class="warranty-nav"><a href="index.html">Гарантия</a></li>
-        <li class="contacts-nav"><a href="index.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <main class="container">
+    <header class="main-header">
+      <span class="logo-header">DEVICE</span>
+      <nav class="header-navigation">
+        <ul class="header-user-navigation">
+          <li><a href="#">Поиск по сайту</a></li>
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="site-navigation">
+          <li><a href="index.html">Каталог товаров</a></li>
+          <li><a href="index.html">Доставка</a></li>
+          <li><a href="index.html">Гарантия</a></li>
+          <li><a href="index.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contents">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -32,7 +31,39 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр:</h2>
-        <!--Форма-->
+        <form class="filters-options" action="/echo" method="post">
+          <div class="filter-price">
+            <p>Стоимость</p>
+            <input type="range" id="price" name="price">
+          </div>
+          <div class="filter-color">
+            <p>Цвет</p>
+            <input type="checkbox" name="color" id="filter-color1" checked>
+              <label for="filter-color1">Черный</label><br>
+            <input type="checkbox" name="color" id="filter-color2">
+              <label for="filter-color2">Белый</label><br>
+            <input type="checkbox" name="color" id="filter-color3" checked>
+              <label for="filter-color3">Синий</label><br>
+            <input type="checkbox" name="color" id="filter-color4" checked>
+              <label for="filter-color4">Красный</label><br>
+            <input type="checkbox" name="color" id="filter-color5">
+              <label for="filter-color5">Розовый</label>
+          </div>
+          <div class="filter-price">
+            <p>Bluetooth</p>
+            <input type="radio" id="bluetooth" name="garniture" checked>
+              <label for="bluetooth">Есть</label><br>
+            <input type="radio" id="bluetooth" name="garniture">
+              <label for="bluetooth">Нет</label><br>
+            <button>Показать</button>
+          </div>
+        </form>
+      </section>
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка:</h2>
+          <p class="sorting-item"><a href="catalog.html">По цене</p>
+          <p class="sorting-item"><a href="catalog.html">По типу</p>
+          <p class="sorting-item"><a href="catalog.html">По популярности</p>
       </section>
       <section class="catalog">
         <ul class="catalog-menu">
@@ -76,25 +107,32 @@
       </section>
     </main>
     <footer>
-      <nav class="main-footer-navigation">
-        <a class="footer-header-logo" href="index.html">
-          <img src="http://placehold.it/150x100" alt="Логотип Девайс">
-          <p>г.Москва, ул.Строителей, 15</p>
-        </a>
-        <ul class="user-navigation">
-          <li class="search">Поиск по сайту</li>
-          <li class="login">Войти</li>
-          <li class="compare">Сравнить</li>
-          <li class="basket">Корзина</li>
+      <section class="footer-user">
+        <span class="logo-footer">DEVICE</span>
+        <ul class="footer-user-menu">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="site-navigation">
-          <li class="delivery-nav"><a href="index.html">Доставка</a></li>
-          <li class="warranty-nav"><a href="index.html">Гарантия</a></li>
-          <li class="contacts-nav"><a href="index.html">Контакты</a></li>
+      </section>
+      <section class="footer-conditions">
+        <p>г.Москва, ул.Строителей, 15</p>
+        <ul class="footer-condition-menu">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <p>Тел.:  +7 (495) 495 95 95</p>
-      </nav>
-    <p>«<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        <p>Тел: +7(495)495-95-95</p>
+      </section>
+      <section class="footer-social">
+        <ul class="social-buttons">
+          <li><a href="#" class="social-botton-facebook">Facebook</a></li>
+          <li><a href="#" class="social-botton-instagram">Instagram</a></li>
+          <li><a href="#" class="social-botton-twitter">Twitter</a></li>
+        </ul>
+        <span class="icon">
+        <p>«<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      </section>
     </footer>
   </body>
 </html>
