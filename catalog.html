@@ -24,42 +24,73 @@
       </nav>
     </header>
     <main class="contents">
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a><img src="img/nav-arrow.svg"></li>
-        <li><a href="catalog.html">Каталог товаров</a><img src="img/nav-arrow.svg"></li>
-        <li class="breadcrumbs-current">Монопод для селфи</li>
-      </ul>
+      <div class="top-content">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a><img src="img/nav-arrow.svg"></li>
+          <li><a href="catalog.html">Каталог товаров</a><img src="img/nav-arrow.svg"></li>
+          <li class="breadcrumbs-current">Монопод для селфи</li>
+        </ul>
+      </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр:</h2>
         <img class="background-filter" src="img/background filter.png" width="600" alt="layer9">
-        <form class="filters-options" action="/echo" method="post">
+        <form class="filters-options" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-price">
             <p>Стоимость</p>
-            <img src="img/filter-button.svg"><input type="range" id="price" name="price"><img src="img/filter-button.svg">
+            <img src="img/filter-button.svg">
+            <input class="visually hidden" type="range" id="price" name="price">
+            <img src="img/filter-button.svg">
           </div>
-          <div class="filter-color">
-            <p>Цвет</p>
-            <img src="img/checkbox-on.svg"><input type="checkbox" name="color" id="filter-color1" checked>
-              <label for="filter-color1">Черный</label><br>
-            <img src="img/checkbox-off.svg"><input type="checkbox" name="color" id="filter-color2">
-              <label for="filter-color2">Белый</label><br>
-            <img src="img/checkbox-on.svg"><input type="checkbox" name="color" id="filter-color3" checked>
-              <label for="filter-color3">Синий</label><br>
-            <img src="img/checkbox-on.svg"><input type="checkbox" name="color" id="filter-color4" checked>
-              <label for="filter-color4">Красный</label><br>
-            <img src="img/checkbox-off.svg"><input type="checkbox" name="color" id="filter-color5">
-              <label for="filter-color5">Розовый</label>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-options">
+                <img src="img/checkbox-on.svg">
+                <input class="visually hidden" type="checkbox" name="black" id="filter-color1" checked>
+                <label for="filter-color1">Черный</label><br>
+              </li>
+              <li class="filter-options">
+                <img src="img/checkbox-off.svg">
+                <input class="visually hidden" type="checkbox" name="white" id="filter-color2">
+                <label for="filter-color2">Белый</label><br>
+              </li>
+              <li class="filter-options">
+                <img src="img/checkbox-on.svg">
+                <input class="visually hidden" type="checkbox" name="blue" id="filter-color3" checked>
+                <label for="filter-color3">Синий</label><br>
+              </li>
+              <li class="filter-options">
+                <img src="img/checkbox-on.svg">
+                <input class="visually hidden" type="checkbox" name="red" id="filter-color4" checked>
+                <label for="filter-color4">Красный</label><br>
+              </li>
+              <li class="filter-options">
+                <img src="img/checkbox-off.svg">
+                <input class="visually hidden" type="checkbox" name="pink" id="filter-color5">
+                <label for="filter-color5">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-price">
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-options">
+                <img src="img/radio-on.svg">
+                <input class="visually hidden" type="radio" id="bluetooth" name="garniture" checked>
+                <label for="bluetooth">Есть</label><br>
+              </li>
+              <li class="filter-options">
+                <img src="img/radio-off.svg">
+                <input class="visually hidden" type="radio" id="bluetooth" name="garniture">
+                <label for="bluetooth">Нет</label><br>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="button-form">
+            <button type="submit" class="filter-button">Показать</button>
           </div>
-          <div class="filter-price">
-            <p>Bluetooth</p>
-            <img src="img/radio-on.svg"><input type="radio" id="bluetooth" name="garniture" checked>
-              <label for="bluetooth">Есть</label><br>
-            <img src="img/radio-off.svg"><input type="radio" id="bluetooth" name="garniture">
-              <label for="bluetooth">Нет</label><br>
-            <button>Показать</button>
             <img class="background-filter1" src="img/background filter1.png" width="200" alt="layer10">
-          </div>
         </form>
       </section>
       <section class="sorting">
@@ -109,7 +140,7 @@
             <li class="page2"><a href="index.html">2</a></li>
             <li class="page3"><a href="index.html">3</a></li>
             <li class="forward-page"><a href="index.html">Вперед</a></li>
-        </ul>
+          </ul>
       </section>
     </main>
     <footer>
