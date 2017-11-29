@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+.header-navigation,
+.slides-switches,
+.device-title,
+.conditions-menu,
+.logo-brands,
+.company,
+.footer-user-menu,
+.footer-condition-menu,
+.social-buttons,
+.breadcrumbs,
+.catalog-menu,
+.filter-options,
+.page-navigation-main {
+  list-style: none;
+}
+.header-user-navigation a,
+.site-navigation a,
+.container a,
+.catalog-device a,
+.about-us a,
+.contacts a,
+.footer-user a,
+.footer-conditions a,
+.footer-social a,
+.top-content a,
+.sorting a,
+.page-navigation-main a {
+  color: #000000;
+}
+.header-user-navigation {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #000000;
+}
+.site-navigation  {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  color: #000000;
+}
+.header-user-navigation a:hover,
+.header-user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
+.main-header img:hover:not(.background-layer),
+.main-header img:focus:not(.background-layer){
+  color: #666666;
+  opacity: 0.6;
+}
+.header-user-navigation a:active,
+.site-navigation a:active {
+  color: #b2b2b2;
+  opacity: 0.3;
+}
+.header-user-navigation,
+.site-navigation {
+  list-style: none;
+}
+.container img.text-line:hover,
+.container img.text-line:focus  {
+  height: 30px;
+  width: 200px;
+}
+.slides-button button {
+  border-radius: 100px;
+}
+.catalog-device img.background-device:hover,
+.catalog-device img.background-device:focus {
+  background-color: #f0c52e;
+}
+.catalog-device img.background-device:active  {
+  background-color: #f0c52e;
+}
+ul.device-title img:active {
+  opacity: 0.3;
+}
+.headline-text2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+h1 {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #000000;
+}
+.inner-page h1 {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #000000;
+}
+.top-content a,
+.top-content a,
+.top-content .breadcrumbs-current,
+.top-content .breadcrumbs-current {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #bcbcbc;
+  opacity: 0.3;
+}
+.top-content a:hover,
+.top-content a:focus,
+.top-content .breadcrumbs-current:hover,
+.top-content .breadcrumbs-current:focus {
+  color: #bcbcbc;
+  opacity: 0.6;
+}
+.top-content a:active,
+.top-content a:active,
+.top-content .breadcrumbs-current:active,
+.top-content .breadcrumbs-current:active {
+  color: #bcbcbc;
+  opacity: 0.1;
+}
+.container .text-bottom  {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contents  a:active {
+  color: #b2b2b2;
+}
+.options .option-device  {
+  font-family: 'gilroylight', sans-serif;
+  src: url('fonts/gilroylight-webfont.woff2') format('woff2'),
+       url('fonts/gilroylight-webfont.woff') format('woff');
+  font-weight: 300;
+  font-size: 36px;
+  line-height: auto;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: #000000;
+}
+.options p  {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
+}
+.catalog-device p {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.catalog-device a:hover,
+.catalog-device a:focus {
+  color: #666666;
+}
+.catalog-device a:active {
+  color: #b2b2b2;
+}
+.conditions button  {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+.conditions button:active  {
+  color: #f7e184;
+}
+.conditions img.text-conditions1:hover,
+.conditions img.text-conditions1:focus  {
+  height: 30px;
+  width: 200px;
+  color: #f0c52e;
+}
+.conditions img.text-conditions1:active  {
+  height: 30px;
+  width: 250px;
+  color: #000000;
+}
+
+h3  {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.delivery-content p,
+.about-us-more p,
+.contacts p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
+.brand img:hover,
+.brand img:focus  {
+  background: url("../img/logo Dji color.jpg");
+}
+.about-us .about-text  {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contacts .contacts-text  {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.inner-page h2 {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.filters fieldset {
+  border: none;
+}
+.filters p {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 1px;
+}
+
+.filters legend {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 1px;
+}
+.filters ul {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+}
+.inner-page h2 {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 2px;
+}
+.sorting p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+    opacity: 0.3;
+}
+.sorting p:hover {
+  opacity: 0.6;
+}
+.sorting p:active {
+  opacity: 1;
+}
+.sorting img {
+  opacity: 0.2;
+}
+.sorting img:hover {
+  opacity: 0.4;
+}
+.sorting img:active {
+  opacity: 1;
+}
+.page-navigation-main li:nth-child(n+2):hover {
+  opacity: 0.3;
+}
+.catalog .description {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 1px;
+}
+.catalog .description:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catalog .price {
+  font-family: 'gilroylight', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.page-navigation-main {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 2px
+}
+
+.footer-user img.logo-footer:hover,
+.footer-user img.logo-footer:focus  {
+  color: #ffc600;
+  opacity: 0.6;
+}
+.footer-user img.logo-footer:active  {
+  color: #ffc600;
+  opacity: 0.3;
+}
+.footer-conditions p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #464646;
+}
+.footer-user a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  opacity: 0.7;
+  background-color: #464646;
+}
+.footer-user a:hover,
+.footer-user a:focus {
+  opacity: 1;
+}
+.footer-user a:active {
+  opacity: 0.3;
+}
+.footer-user img {
+  color: #ffc600;
+}
+.footer-conditions a {
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #464646;
+}
+.footer-conditions a:hover,
+.footer-conditions a:focus {
+  opacity: 0.6;
+}
+.footer-conditions a:active {
+  opacity: 0.3;
+}
+.social-buttons img {
+  opacity: 0.3;
+  background-color: #464646;
+}
+.social-buttons img:hover,
+.social-buttons img:focus {
+  opacity: 0.6;
+  background-color: #464646;
+}
+.social-buttons img:active {
+  opacity: 0.1;
+  background-color: #464646;
+}
+.icon img:hover:not(.layer-footer2),
+.icon img:focus:not(.layer-footer2) {
+  color: #ffc600;
+  opacity: 0.6;
+}
+.icon img:active:not(.layer-footer2) {
+  color: #ffc600;
+  opacity: 0.3;
+}
