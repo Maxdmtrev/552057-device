@@ -203,7 +203,7 @@ a:hover.detail-button {
   position: relative;
   min-width: 440px;
   margin-left: 40px;
-  margin-top: 34px;
+  margin-top: 0px;
 }
 
 .search-input {
@@ -288,7 +288,7 @@ a:hover.detail-button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 475px;
-  margin-top: 40px;
+  margin-top: 0px;
   margin-right: 40px;
 }
 
