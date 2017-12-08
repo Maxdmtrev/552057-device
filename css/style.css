@@ -298,6 +298,13 @@ a:hover.detail-button {
   flex-grow: 4;
 }
 
+.button-name {
+  -webkit-box-flex: 4;
+  -ms-flex-positive: 4;
+  flex-grow: -1;
+  margin-right: 20px;
+}
+
 .user-profile {
   margin-top: 3px;
   margin-right: 20px;
@@ -325,6 +332,12 @@ a:hover.detail-button {
 }
 
 .button-login::before, .user-profile::before {
+  position: absolute;
+  left: -25px;
+  content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>');
+}
+
+.button-name::before, .user-profile::before {
   position: absolute;
   left: -25px;
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>');
