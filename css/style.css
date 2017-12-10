@@ -121,6 +121,7 @@ a:hover.detail-button {
   background-color: transparent;
   background-position: center;
   font-family: "Open Sans", 'Arial', sans-serif;
+  font-weight: 300;
   line-height: 36px;
 }
 
@@ -290,6 +291,7 @@ a:hover.detail-button {
   min-width: 475px;
   margin-top: 0px;
   margin-right: 40px;
+  text-decoration: none;
 }
 
 .button-login {
@@ -530,6 +532,7 @@ a:hover.detail-button {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: #000000;
 }
 
 .slide-tagline {
@@ -540,6 +543,7 @@ a:hover.detail-button {
   font-size: 47px;
   font-weight: 800;
   line-height: normal;
+  color: #000000;
 }
 
 .slide-tagline::before {
@@ -587,6 +591,8 @@ a:hover.detail-button {
 .slide-link {
   display: inline-block;
   margin: 0;
+  letter-spacing: 4px;
+  text-decoration: none;
 }
 
 .slide-row-table {
@@ -670,6 +676,7 @@ a:hover.detail-button {
   justify-content: space-between;
   width: 1160px;
   margin-bottom: 170px;
+  letter-spacing: 0.1px;
 }
 
 .category-device-name {
@@ -679,7 +686,7 @@ a:hover.detail-button {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 20px;
+  line-height: 21px;
 }
 
 .card-image-device {
@@ -753,10 +760,11 @@ a:hover.detail-button {
   width: 160px;
   margin: 0;
   margin-bottom: 20px;
-}
+  }
 
 .services-button {
   min-width: 160px;
+  letter-spacing: 4px;
 }
 
 .services-item:first-child {
@@ -905,13 +913,14 @@ a:hover.detail-button {
 
 .about-us {
   margin: 0;
-  margin-right: 128px;
+  margin-right: 45px;
   padding: 0;
   width: 580px;
 }
 
 .contacts {
-  margin-right: 0;
+  margin-right: 30;
+  margin-left: 10px;
 }
 
 .about-title, .contacts-title {
@@ -936,13 +945,14 @@ a:hover.detail-button {
 }
 
 .about-content, .contacts-content {
-  letter-spacing: -.35px;
+  letter-spacing: -.1px;
   color: #464646;
   line-height: 30px;
 }
 
 .about-content {
   margin-bottom: 30px;
+  width: 550px;
 }
 
 .contacts-content {
@@ -959,9 +969,17 @@ a:hover.detail-button {
   line-height: 40px;
   color: #000;
 }
-.company::before {
-  background: url(../img/slider-button-company.png);
+
+.company li::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -35px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/slider-button-list.svg") no-repeat center;
 }
+
 .contacts-container-map {
   margin-bottom: 59px;
 }
@@ -1365,7 +1383,7 @@ a:hover.detail-button {
 /*Каталог: Стили основных элементов*/
 
 .inner-page {
-  margin-top: -30px;
+  margin-top: 30px;
 }
 
 .container-inner {
