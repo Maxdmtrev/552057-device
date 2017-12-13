@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Магазин гаджетов "Девайс" главная страница</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,14 +21,14 @@
               <button class="button search-button" type="submit">Найти</button>
             </form>
           </div>
-          <div class="user-navigation">
-            <button class="button button-login" type="button">Войти</button>
-            <button class="button button-compare" type="button">Сравнить</button>
-            <button class="button button-cart" type="button">Корзина</button>
-          </div>
+          <ul class="user-navigation-header">
+            <li class="user-enter"><a href="login-page.html">Войти</a></li>
+            <li class="comparison"><a href="#">Сравнить</a></li>
+            <li class="cart"><a href="#">Корзина</a></li>
+          </ul>
           <nav class="header-navigation">
             <div class="catalog">
-              <button class="button catalog-button" type="button">Каталог товаров</button>
+              <a class="button catalog-button" href="catalog.html">Каталог товаров</a>
               <div class="catalog-falling">
                 <ul class="catalog-list">
                   <li class="catalog-item">
@@ -263,9 +263,9 @@
     <div class="footer-user-navigation">
     <img class="logo-footer" src="img/logo1.png" width="163" height="36" alt="logo1">
       <ul class="footer-user-navigation-list">
-        <li class="footer-user-navigation-item"><button class="button button-login">Войти</button></li>
-        <li class="footer-user-navigation-item"><button class="button button-compare">Сравнить</button></li>
-        <li class="footer-user-navigation-item"><button class="button button-cart">Корзина</button></li>
+        <li class="footer-user-navigation-item"><a class="button button-login">Войти</a></li>
+        <li class="footer-user-navigation-item"><a class="button button-compare">Сравнить</a></li>
+        <li class="footer-user-navigation-item"><a class="button button-cart">Корзина</a></li>
       </ul>
     </div>
     <div class="footer-contacts-services">
