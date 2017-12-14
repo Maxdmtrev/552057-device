@@ -125,6 +125,22 @@ a:hover.detail-button {
   font-weight: 800;
 }
 
+.detail-button-cat {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-width: 200px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .detail-button:before {
   position: absolute;
   z-index: -1;
@@ -148,6 +164,32 @@ a:hover.detail-button {
 }
 
 .detail-button:active {
+  color: #b3b3b3;
+}
+
+.detail-button-cat:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -3px;
+  width: 100%;
+  height: 8px;
+  margin: auto;
+  content: '';
+  background: #f0c52e;
+}
+
+.detail-button-cat:hover::before {
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-repeat: repeat;
+  opacity: 1;
+}
+
+.detail-button-cat:active {
   color: #b3b3b3;
 }
 
@@ -1623,10 +1665,11 @@ a:hover.detail-button {
   margin: 0;
   padding: 0;
   border: none;
+  padding-top: 0px;
 }
 
 .catalog-inner-wrapper legend {
-  width: 200px;
+  width: 201px;
   margin: 0;
   padding: 0;
   padding-top: 7px;
@@ -1639,8 +1682,9 @@ a:hover.detail-button {
 .filter {
   position: relative;
   width: 330px;
+  margin-top: 1px;
   margin-bottom: 3px;
-  padding-left: 60px;
+  padding-left: 61px;
   background-color: #eeeeee;
   color: #000000;
   border: none;
@@ -1683,6 +1727,7 @@ a:hover.detail-button {
 
 .filter-range {
   height: 140px;
+  margin-bottom: 10px;
 }
 
 .price-slider {
@@ -1690,7 +1735,7 @@ a:hover.detail-button {
   position: relative;
   width: 196px;
   height: 2px;
-  margin-top: 32px;
+  margin-top: 31px;
   margin-bottom: 5px;
   line-height: 0;
   font-size: 0;
@@ -1708,7 +1753,7 @@ a:hover.detail-button {
   display: inline-block;
   vertical-align: middle;
   position: absolute;
-  top: -12px;
+  top: -13px;
   left: -10px;
   width: 30px;
   height: 30px;
@@ -1761,16 +1806,19 @@ a:hover.detail-button {
 }
 
 .filter-list.filter-color {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .filter-list.filter-bluetoos {
+  margin-top: 2px;
   margin-bottom: 13px;
 }
 
 .filter-name {
   position: relative;
   margin-bottom: 25px;
+  letter-spacing: 0.36px;
+  margin-left: -5px;
 }
 
 .filter-slider .filter-name {
@@ -1795,13 +1843,13 @@ a:hover.detail-button {
 .filter-list label {
   position: relative;
   padding-top: 0px;
-  padding-left: 39px;
+  padding-left: 38px;
   cursor: pointer;
 }
 
 .filter-list input {
   position: absolute;
-  margin-top: 5px;
+  margin-top: 6px;
   opacity: 0;
 }
 
@@ -1809,8 +1857,8 @@ a:hover.detail-button {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 0;
+  top: -4px;
+  left: -2px;
   width: 27px;
   height: 25px;
 }
@@ -1967,7 +2015,6 @@ margin-left: 25px;
   opacity: 1;
 }
 
-
 /*Каталог: Товары*/
 
 .products-cards-list {
@@ -2007,12 +2054,26 @@ margin-left: 25px;
 
 .product-name {
   width: 260px;
-  letter-spacing: .28px;
+  letter-spacing: .18px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: normal;
   color: #000000;
+}
+
+.reflect-1 {
+  width: 260px;
+  letter-spacing: .48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  color: #000000;
+}
+
+ .reflect-2 {
+  margin-top: 0px;
 }
 
 .product-cost {
